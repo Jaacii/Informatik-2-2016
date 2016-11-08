@@ -38,52 +38,52 @@ public class Textadventure extends Application {
         naechsterAbschnitt = new int[abenteuerlaenge][2];
 
         // 0: Startpunkt
-        abschnitte[0] = "Du erwachst. Es ist kalt und du hast einen Kater. Es riecht ein wenig muffig.";
-        beschriftungen[0][0] = "Du siehst dich um.";
+        abschnitte[0] = "Du wachst auf und erinnerst dich nicht, wie du herkamst. Du siehst eine große Klippe hinunter. Auf der Anderen Seite ist ein Haus.";
+        beschriftungen[0][0] = "Du fliegst auf die andere Seite.";
         naechsterAbschnitt[0][0] = 1;
-        beschriftungen[0][1] = "Du stehst auf.";
+        beschriftungen[0][1] = "Du balancierst \u00fcber einen Baumstamm um auf die andere Seite zu kommen.";
         naechsterAbschnitt[0][1] = 2;
 
-        // 1: Umsehen nach erfwachen
-        abschnitte[1] = "Ich glaub, du stehst im Wald... nein, vielmehr liegst du im Wald. Muss eine üble Party gewesen sein.";
-        beschriftungen[1][0] = "Du stehst auf.";
+        // 1: Die Klippe 
+        abschnitte[1] = "Menschen können nicht fliegen....also f\u00e4llst du die Klippe runter und landest einem großen See.";
+        beschriftungen[1][0] = "Du kletterst die die Klippe mit dem Haus herauf.";
         naechsterAbschnitt[1][0] = 2;
-        beschriftungen[1][1] = "Du schläfst lieber nochmal ne Runde.";
+        beschriftungen[1][1] = "Du kletterst die Klippe herauf, auf der du vorher standest.";
         naechsterAbschnitt[1][1] = 0;
 
-        // 2: Aufstehen
-        abschnitte[2] = "Schwankend kommst du auf die Füße. Der nächste Wald von deiner WG aus liegt in nördlicher Richtung. Wie war das doch noch?";
-        beschriftungen[2][0] = "An Bäumen wächst das Moos auf der Südseite, denn Moos wächst im Sonnenlicht.";
+        // 2: Das Haus
+        abschnitte[2] = "Du betrittst das Gel\u00e4nde des Hauses. Es ist sehr alt und gro\u00df.";
+        beschriftungen[2][0] = "Du drückst den T\u00fcrklinke und gehst hinein.";
         naechsterAbschnitt[2][0] = 3;
-        beschriftungen[2][1] = "Quatsch, es ist genau umgekehrt.";
+        beschriftungen[2][1] = "Du gehst lieber anderswo weiter.";
         naechsterAbschnitt[2][1] = 4;
 
-        // 3: Nach Norden
-        abschnitte[3] = "So soll es sein... Du schwankst durch einen unbekannten Wald in eine Richtung, die du für Süden hältst.";
-        beschriftungen[3][0] = "Du bleibst bei deiner Entscheidung und gehst immer weiter in die Richtung.";
+        // 3: Im Haus
+        abschnitte[3] = "Du hast das Haus betreten und schaust dich um.";
+        beschriftungen[3][0] = ".";
         naechsterAbschnitt[3][0] = 5;
         beschriftungen[3][1] = "Du bist dir nicht sicher und drehst nochmal um.";
         naechsterAbschnitt[3][1] = 6;
 
-        // 4: Nach Süden
-        abschnitte[4] = "So soll es sein... Du schwankst durch einen unbekannten Wald in eine Richtung, die du für Süden hältst.";
-        beschriftungen[4][0] = "Du bleibst bei deiner Entscheidung und gehst immer weiter in die Richtung.";
+        // 4: Alternativer Weg
+        abschnitte[4] = "Du rennst ziellos in den Wald. Hinter einem Baum siehst du einen B\u00e4ren.";
+        beschriftungen[4][0] = "Du springst entschlossen auf den R\u00fccken des B\u00e4ren.";
         naechsterAbschnitt[4][0] = 9;
-        beschriftungen[4][1] = "Du bist dir nicht sicher und drehst nochmal um.";
+        beschriftungen[4][1] = "Du drehst um und flüchtest in irgendeine Richtung. ";
         naechsterAbschnitt[4][1] = 5;
 
-        // 5: Weiter nach Norden
-        abschnitte[5] = "Und du gehst ... und gehst ... und gehst...";
-        beschriftungen[5][0] = "und drehst dann irgendwann um, weils so weit doch nicht sein kann.";
+        // 5: Die Flucht
+        abschnitte[5] = "Du rennst und rennst immer weiter.";
+        beschriftungen[5][0] = "und drehst dann irgendwann um, weil du nicht denkst, dass dies der richtige Weg ist.";
         naechsterAbschnitt[5][0] = 6;
-        beschriftungen[5][1] = "und gehst immer weiter.";
+        beschriftungen[5][1] = "und hörst auch nicht damit auf.";
         naechsterAbschnitt[5][1] = 8;
 
-        // 6: Doch nach Süden
-        abschnitte[6] = "Du kommst an der Stelle vorbei, an der du aufgewacht bist.";
-        beschriftungen[6][0] = "Weiter geht's.";
+        // 6: Rückkehr
+        abschnitte[6] = "Du kommst wieder an der Stelle mit dem B\u00e4ren vorbei";
+        beschriftungen[6][0] = "Du springst jetzt entschlossen auf den R\u00fccken des B\u00e4ren.";
         naechsterAbschnitt[6][0] = 9;
-        beschriftungen[6][1] = "Nein, doch lieber umdrehen.";
+        beschriftungen[6][1] = "Du gehst doch lieber in das Haus.";
         naechsterAbschnitt[6][1] = 5;
 
         //
@@ -94,14 +94,14 @@ public class Textadventure extends Application {
         naechsterAbschnitt[7][1] = 2;
 
         // 8: Game Over
-        abschnitte[8] = "Du hast dich hoffnungslos verirrt.";
+        abschnitte[8] = "Du rennst und rennst und siehst schon die ersten H\u00e4user. Deine Freude verfliegt, als du bemerkst, dass du wieder an der Klippe mit dem Haus stehst.";
         beschriftungen[8][0] = "Nochmal von vorne.";
         naechsterAbschnitt[8][0] = 0;
         beschriftungen[8][1] = "Nochmal von vorne.";
         naechsterAbschnitt[8][1] = 0;
 
         // 9: Ende
-        abschnitte[9] = "Nach fünf Minuten brichst du durch die Hecke auf das Gelände deines Wohnheims. Dann mal ran an Statistik 1 - Und mögest du alle Hoffnung verlieren.";
+        abschnitte[9] = "Tatsächlich ist es ein Zirkusb\u00e4r und du reitest auf ihm in den Sonnenuntergang bis du zur Zivilisation zur\u00fcck findest.";
         beschriftungen[9][0] = "Nochmal von vorne.";
         naechsterAbschnitt[9][0] = 0;
         beschriftungen[9][1] = "Nochmal von vorne.";
