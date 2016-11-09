@@ -38,14 +38,14 @@ public class Textadventure extends Application {
         naechsterAbschnitt = new int[abenteuerlaenge][2];
 
         // 0: Startpunkt
-        abschnitte[0] = "Du wachst auf und erinnerst dich nicht, wie du herkamst. Du siehst eine große Klippe hinunter. Auf der Anderen Seite ist ein Haus.";
+        abschnitte[0] = "Du wachst auf und erinnerst dich nicht, wie du herkamst. Du siehst eine große Klippe hinunter. Auf der anderen Seite ist ein Haus.";
         beschriftungen[0][0] = "Du fliegst auf die andere Seite.";
         naechsterAbschnitt[0][0] = 1;
         beschriftungen[0][1] = "Du balancierst \u00fcber einen Baumstamm um auf die andere Seite zu kommen.";
         naechsterAbschnitt[0][1] = 2;
 
         // 1: Die Klippe 
-        abschnitte[1] = "Menschen können nicht fliegen....also f\u00e4llst du die Klippe runter und landest einem großen See.";
+        abschnitte[1] = "Menschen k\u00f6nnen nicht fliegen....also f\u00e4llst du die Klippe runter und landest einem großen See.";
         beschriftungen[1][0] = "Du kletterst die die Klippe mit dem Haus herauf.";
         naechsterAbschnitt[1][0] = 2;
         beschriftungen[1][1] = "Du kletterst die Klippe herauf, auf der du vorher standest.";
@@ -59,17 +59,17 @@ public class Textadventure extends Application {
         naechsterAbschnitt[2][1] = 4;
 
         // 3: Im Haus
-        abschnitte[3] = "Du hast das Haus betreten und schaust dich um.";
-        beschriftungen[3][0] = ".";
+        abschnitte[3] = "Du hast das Haus betreten und schaust dich um. Pl\u00f6tzlich siehst du einen Geist!";
+        beschriftungen[3][0] = "Du erschreckst dich, springst durch ein kaputtes Fenster und suchst das Weite....";
         naechsterAbschnitt[3][0] = 5;
-        beschriftungen[3][1] = "Du bist dir nicht sicher und drehst nochmal um.";
+        beschriftungen[3][1] = "Du erschreckst dich, rennst durch die Eingangst\u00fcr und suchst das Weite...";
         naechsterAbschnitt[3][1] = 6;
 
         // 4: Alternativer Weg
         abschnitte[4] = "Du rennst ziellos in den Wald. Hinter einem Baum siehst du einen B\u00e4ren.";
         beschriftungen[4][0] = "Du springst entschlossen auf den R\u00fccken des B\u00e4ren.";
         naechsterAbschnitt[4][0] = 9;
-        beschriftungen[4][1] = "Du drehst um und flüchtest in irgendeine Richtung. ";
+        beschriftungen[4][1] = "Du drehst um und fl\u00fcchtest in irgendeine Richtung. ";
         naechsterAbschnitt[4][1] = 5;
 
         // 5: Die Flucht
@@ -80,7 +80,7 @@ public class Textadventure extends Application {
         naechsterAbschnitt[5][1] = 8;
 
         // 6: Rückkehr
-        abschnitte[6] = "Du kommst wieder an der Stelle mit dem B\u00e4ren vorbei";
+        abschnitte[6] = "Du siehst einen Braunb\u00e4ren vor dir.";
         beschriftungen[6][0] = "Du springst jetzt entschlossen auf den R\u00fccken des B\u00e4ren.";
         naechsterAbschnitt[6][0] = 9;
         beschriftungen[6][1] = "Du gehst doch lieber in das Haus.";
